@@ -1,0 +1,40 @@
+esphome:
+    name: esp-beam-sensor
+  
+  esp8266:
+    board: d1_mini
+  
+  # Enable logging
+  logger:
+  
+  # Enable Home Assistant API
+  api:
+    encryption:
+      key: "q+sw40kzRTgK9F+7lBPr3YACD4qVJMIYeyXbiwzwB74="
+  
+  ota:
+    password: "9dcf9a1ab7858db79158b30c2d29abbe"
+  
+  wifi:
+    ssid: !secret wifi_ssid
+    password: !secret wifi_password
+  
+    # Enable fallback hotspot (captive portal) in case wifi connection fails
+    ap:
+      ssid: "Esp-Beam-Sensor Fallback Hotspot"
+      password: "i7T22TUhHHYq"
+  
+  captive_portal:
+  
+  binary_sensor:
+    - platform: gpio
+      pin:
+        number: D1
+        inverted: true
+        mode:
+          input: true
+          pullup: true
+      filters:
+        - delayed_on: 300ms
+      name: "ESP Beam Sensor"
+      device_class: motion
