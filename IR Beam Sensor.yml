@@ -9,11 +9,8 @@ esphome:
   
   # Enable Home Assistant API
   api:
-    encryption:
-      key: "q+sw40kzRTgK9F+7lBPr3YACD4qVJMIYeyXbiwzwB74="
   
   ota:
-    password: "9dcf9a1ab7858db79158b30c2d29abbe"
   
   wifi:
     ssid: !secret wifi_ssid
