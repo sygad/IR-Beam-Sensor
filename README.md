@@ -35,17 +35,10 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 
 ## Indoor IR beam sensor connections
 
-<figure>
+> Relay is connected in the Normally Open (NO) position
+
 <img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:500px;"/>
-<figcaption>Power and Relay connections for indoor IR Beam Sensor</figcaption>
-</figure>
-
-<br>
-
-<figure>
 <img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:500px;"/>
-<figcaption>Relay in Normally Open (NO) position</figcaption>
-</figure>
 
 
 
@@ -96,11 +89,13 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
   _Configure MQTT Topic Name_
   - Main Menu > Configuration > Configure Other
   - Under Device Name, enter a name that will be used to pass MQTT messages
-  - <img src="images/Tasmota-topic-name.jpg" alt="Tasmota topic naming" style="width:450px;"/>
+
+    <img src="images/Tasmota-topic-name.jpg" alt="Tasmota topic naming" style="width:450px;"/>
 
   _Confirm MQTT is sending messages using the chosen topic name_
   - Main menu > Console
-  - <img src="images/Tasmota-Console.jpg" alt="Tasmota console showing correct topic name is being used" style="width:800px;"/>
+
+    <img src="images/Tasmota-Console.jpg" alt="Tasmota console showing correct topic name is being used" style="width:800px;"/>
 
 <br>
 
