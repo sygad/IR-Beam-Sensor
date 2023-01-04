@@ -76,7 +76,7 @@ Check that the new ESPHome device has been created and added to the devices list
 <img src="images/Stairs-Beam-New-Device.jpg" alt="New ESPHome device added to devices list" style="width:900px;"/>
 
 
-Click on the Stairs Beam Sensor device to see a list of entities. You can test the Motion entity by connecting GND to D1, the motion entity will change from "Clear" to "Detected"
+Click on the Stairs Beam Sensor device to see a list of entities. You can test the Motion entity by connecting GND to D1 on the Wemos D1. The motion entity will change from "Clear" to "Detected"
 
 <img src="images/Stairs-beam-device-information.jpg" alt="All information for new stairs beam sensor device" style="width:900px;"/>
 
