@@ -35,11 +35,13 @@ This is where I am aiming to get to when everything is in place:
 <br>
 
 ## Wiring
-
+<img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Tasmota topic naming" style="width:400px;"/>
 
 <br>
+<br>
+<br>
 
-## Project History
+# Project History
 
 <br>
 
@@ -57,7 +59,7 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
 **1. Configuring the Wemos with Tasmota**
 - Ensure your MQTT server is setup in HA
 - Obtain the IP address of the newly flashed Tasmota Wemos device from your router
-- Go the IP address of the new Tasmota device and configure MQTT
+- Go to the IP address of the new Tasmota device to configure MQTT
 
   _Configure MQTT on Tasmota_
   - Main Menu > Configuration > Configure MQTT
@@ -70,7 +72,7 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
   - Under Device Name, enter a name that will be used to pass MQTT messages, I chose "Tasmota Beam Sensor"
   - <img src="images/Tasmota-topic-name.jpg" alt="Tasmota topic naming" style="width:300px;"/>
 
-  _Confirm MQTT_
+  _Confirm MQTT is sending messages under the chosen topic name_
   - Main menu > Console
   - <img src="images/Tasmota-Console.jpg" alt="Tasmota topic naming" style="width:600px;"/>
 
@@ -95,7 +97,11 @@ binary_sensor:
 
 Adding the Sensor to an Entities Card
 
-<img src="images/Tasmota-Console.jpg" alt="Tasmota topic naming" style="width:600px;"/>
+<img src="images/Entities-card-with-beam-sensor.png" alt="Tasmota topic naming" style="width:600px;"/>
+
+<img src="images/Beam-sensor-entity.jpg" alt="Tasmota topic naming" style="width:600px;"/>
+
+
 
 
 <br>
