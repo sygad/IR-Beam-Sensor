@@ -35,9 +35,10 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 
 ## Indoor IR beam sensor connections
 
-> Relay is connected in the Normally Open (NO) position
-
 <img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:500px;"/>
+
+IR beam relay is connected in the Normally Open (NO) position
+
 <img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:500px;"/>
 
 
@@ -123,10 +124,10 @@ Adding the Sensor to an Entities Card
 
 
 
-
 <br>
 <hr>
 <br>
+
 
 ## V2
 Transferring from prototype board to a custom PCB, I used this [voltage regulator](https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
@@ -138,9 +139,11 @@ After destroying (3) ESP8266's, I decided to experiment with ESPHome and revise 
 
 <img src="images/IR-beam-PCB-V2.jpg" alt="Version 1 of custom PCB for IR beam sensor" style="width:800px;"/>
 
+
 <br>
 <hr>
 <br>
+
 
 ## V3 (final)
 I experimented with: _(aka, trying anything and everything to get it working)_:
