@@ -29,6 +29,50 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 - [Dupont crimpers](https://www.amazon.co.uk/Ratchet-Yangoutool-Ratcheting-AWG28-20-Terminal/dp/B0895LN7QS/ref=sr_1_10?crid=12LFODXXF07U6&keywords=dupont+crimpers&qid=1672824794&sprefix=dupont+crimpers%2Caps%2C71&sr=8-10) _(optional)_
 
 
+<br>
+
+## ESPHome Code
+
+```
+esphome:
+  name: Stairs Beam Sensor
+
+esp8266:
+  board: d1_mini
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+
+ota:
+
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "Stairs Beam Sensor Fallback Hotspot"
+    password: "i7T22TUhHHYq"
+
+captive_portal:
+
+binary_sensor:
+  - platform: gpio
+    pin:
+      number: D1
+      inverted: true
+      mode:
+        input: true
+        pullup: true
+    filters:
+      - delayed_on: 300ms
+    name: "Stairs Beam Sensor"
+    device_class: motion
+```
+
 
 
 <br>
@@ -159,7 +203,7 @@ and got some simple and excellent advice from [Aruffell](https://community.home-
 
 I made the following checks and alterations
 - Beam sensor relay was a DRY relay (no connection on either relay terminal to the supply +ve / -ve)
-- Relay was set to normally closed (NC) _I actually hadn't checked this previously_
-- PCB optimisations
+- Made sure the relay was set to normally open (NO) _I actually hadn't checked this previously_
+- PCB optimisations for solder pad size, spacing and track width
 - Changed the V1 voltage regulator to a [L7805CV](https://www.amazon.co.uk/gp/product/B007DQ4FXC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). It ran too hot so I eventually settled on a Switching regulator [R-78E5.0-0.5](https://uk.rs-online.com/web/p/switching-regulators/7577239)
 
