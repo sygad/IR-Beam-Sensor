@@ -113,7 +113,6 @@ binary_sensor:
 Adding the Sensor to an Entities Card
 
 <img src="images/Entities-card-with-beam-sensor.png" alt="Enitities card in Home Assistant showing motion sensor" style="width:500px;"/>
-
 <img src="images/Beam-sensor-entity.jpg" alt="Adding IR beam sensor motion entity to an entities card in Home Assistant" style="width:800px;"/>
 
 
@@ -124,12 +123,14 @@ Adding the Sensor to an Entities Card
 <br>
 
 ## V2
-Transferring from prototype board to a custom PCB, I used this [voltage regulator] (https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
+Transferring from prototype board to a custom PCB, I used this [voltage regulator](https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 
 **I should have paid more attention** it was the wrong one: 
 > 5.5V DC Voltage Regulator Step Down Power Supply Module 4.75V-12V to 5V 800mA
 
 After destroying (3) ESP8266's, I decided to experiment with ESPHome and revise the entire circuit
+
+<img src="images/IR-beam-PCB-V2.jpg" alt="Version 1 of custom PCB for IR beam sensor" style="width:800px;"/>
 
 <br>
 <hr>
