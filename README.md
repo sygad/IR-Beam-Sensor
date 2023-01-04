@@ -1,22 +1,39 @@
-# IR-Beam-Sensor
-IR Beam Sensor for Home Assistant using ESPHome. Detect when someone crosses an IR beam.
+# IR Beam Sensor using ESPHome
+
+### Scenario
+Delivery driver walks down the driveway, I need **fast** and reliable indication of the event, e.g. Light flashing.
+
+### Problem with existing methods
+- [Philips Hue outdoor motion sensors](https://www.amazon.co.uk/Philips-Hue-Outdoor-Lighting-Accessory/dp/B09CV7MT5S/ref=sr_1_3?keywords=philips+hue+motion+sensor&qid=1672824648&sr=8-3) can be slow and are not 100% reliable for capturing motion events (personal experience)
+- CCTV motion events are even slower.
+- Dedicating an old tablet to permanently monitor the CCTV for the driveway is a limited solution.
+- Doorbell camera waits for button press to alert me, _(delivery drivers don't always do this)_ **OR** they leave immediately after pressing the button.
+
+### Eventually
+- I would like to utilise ESPresence to flash the light of any room in the house it detects that I am present in.
+- IR beam sends a tasker event to launch my doorbell cam app, giving me a 5-10s head start and not relying on the door bell button press event.
+
+
 
 ## Parts
-- [Indoor beam sensor](https://www.amazon.co.uk/gp/product/B07BTZDNBC/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1)
+- [Indoor beam sensor](https://www.amazon.co.uk/gp/product/B07BTZDNBC/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) _(either sensor will work)_
 - [Outdoor beam sensor](https://www.amazon.co.uk/gp/product/B01M14S944/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1)
-- [DC power jack - DC005](https://www.amazon.co.uk/gp/product/B07F68RZY9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1)
-- Wemos D1 Mini
-- XH-2A connectors
+- [DC power jack - DC005](https://www.amazon.co.uk/gp/product/B07F68RZY9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) _optional_
+- [Wemos D1 Mini](https://www.amazon.co.uk/AZDelivery-Development-ESP8266EX-Compatible-Micropython/dp/B08BTYHJM1/ref=sr_1_3?crid=36564IOYQDDOV&keywords=wemos%2Bd1%2Bmini&qid=1672824715&sprefix=wemos%2Bd1%2Bmini%2Caps%2C70&sr=8-3&th=1)
+- [XH-2A connectors](https://www.amazon.co.uk/555pcs-Connector-XH-Adapter-Housing/dp/B0B45ST47P/ref=sr_1_2?crid=1R5XFBH0WHR3V&keywords=xh-2a+connectors&qid=1672824756&sprefix=xh-2a+connectors%2Caps%2C67&sr=8-2) _optional_
+- [Dupont crimpers](https://www.amazon.co.uk/Ratchet-Yangoutool-Ratcheting-AWG28-20-Terminal/dp/B0895LN7QS/ref=sr_1_10?crid=12LFODXXF07U6&keywords=dupont+crimpers&qid=1672824794&sprefix=dupont+crimpers%2Caps%2C71&sr=8-10) _optional_
+- [R-78E5.0-0.5](https://uk.rs-online.com/web/p/switching-regulators/7577239) switching regulator
 
 ## Wiring
 
 ## Brief History
 
 ### V1
-I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-break-sensors-with-tasmota-and-home-assistant/), to use Tasmota on a Wemos D1 Mini.
+I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-break-sensors-with-tasmota-and-home-assistant/), to use Tasmota on a Wemos D1 Mini to send an ON / OFF trigger via MQTT to Home Assistant (HA).
+
 Whilst this worked, I wanted to migrate my projects to be ESPHome.
 
-The following code is placed inside **mqtt.yaml** _(Here for reference only, I no longer use this code, see V3 below.)_
+To get Home Assistant to recognise the incoming MQTT messages, I added the following code inside the **mqtt.yaml** _(Here for reference only, I no longer use this code, see V3 below.)_
 ```
 binary_sensor:
   - name: "Beam sensor motion"
@@ -44,7 +61,8 @@ After a lot of _"experimentation"_, and confusing myself about sensors not closi
 and got some simple and excellent advice from [Aruffell](https://community.home-assistant.io/u/aruffell/summary) and [Julian Hall](https://community.home-assistant.io/u/juliandh/summary)
 
 I made the following checks and alterations
-- Beam sensor relay was a DRY relay (no connection on either terminal to the supply +ve / -ve)
-- Relay was set to normally closed (NC)
-- Increased the pad size and spacing for voltage regulator to ensure no possibility of shorting _(suspected problem from V1)_
+- Beam sensor relay was a DRY relay (no connection on either relay terminal to the supply +ve / -ve)
+- Relay was set to normally closed (NC) _I actually hadn't checked this previously_
+- PCB optimisations
+- Changed the V1 voltage regulator to a [L7805CV](https://www.amazon.co.uk/gp/product/B007DQ4FXC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). It ran too hot so eventual settled on a Switching regulator [R-78E5.0-0.5](https://uk.rs-online.com/web/p/switching-regulators/7577239)
 
