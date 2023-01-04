@@ -40,6 +40,8 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 <figcaption>Power and Relay connections for indoor IR Beam Sensor</figcaption>
 </figure>
 
+<br>
+
 <figure>
 <img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:500px;"/>
 <figcaption>Relay in Normally Open (NO) position</figcaption>
