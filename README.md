@@ -30,9 +30,23 @@ This is where I am aiming to get to when everything is in place:
 ## Brief History
 
 ### V1
-I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-break-sensors-with-tasmota-and-home-assistant/), to use Tasmota on a Wemos D1 Mini to send an ON / OFF trigger via MQTT to Home Assistant (HA).
+After [flashing the Wemos D1 Mini with Tasmota](https://tasmota.github.io/docs/Getting-Started/#flashing), I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-break-sensors-with-tasmota-and-home-assistant/), to use Tasmota on the Wemos D1 Mini to send an ON / OFF trigger via MQTT to Home Assistant (HA).
 
 Whilst this worked, I wanted to migrate my projects to be ESPHome.
+
+**A few things I struggled with:**
+- How do I configure Tasmota on the Wemos
+- How do I congifure HA **exactly** to recognise the Wemos with Tasmota
+
+Configuring the Wemos with Tasmota
+- Ensure your MQTT server is setup in HA
+- Obtain the IP address of the new device from your router
+- Go the IP address of the new device
+    - Main Menu > Configuration > Configure MQTT
+    - Enter the IP address of your MQTT server (HA, IP address if using Mosquitto add-on)
+    - Enter the MQTT username and password
+
+
 
 To get Home Assistant to recognise the incoming MQTT messages, I added the following code inside the **mqtt.yaml** _(Here for reference only, I no longer use this code, see V3 below.)_
 ```
