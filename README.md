@@ -64,9 +64,10 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
   - Enter the IP address of your MQTT server (HA, IP address if using Mosquitto add-on)
   - Enter the MQTT username and password
 
+
   _Configure MQTT Topic Name_
   - Main Menu > Configuration > Configure Other "Device Name"
-  - Enter a name that will be used in the HA config, I chose "Tasmota Beam Sensor"
+  - Enter a topic name that will be used to pass MQTT messages, I chose "Tasmota Beam Sensor"
   - <img src="images/Tasmota topic name.png" alt="Tasmota topic naming" style="width:300px;"/>
 
 <br>
@@ -85,6 +86,8 @@ binary_sensor:
     icon: "mdi:leak"
 ```
 <br>
+
+Adding the Sensor to an Entities Card
 
 **V1 Summary**
 
