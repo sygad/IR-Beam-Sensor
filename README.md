@@ -70,7 +70,9 @@ binary_sensor:
 <br>
 
 ## Bench test the code
-
+<img src="images/Stairs Beam New Device.png" alt="New ESPHome device added to devices list" style="width:500px;"/>
+<img src="images/Stairs beam device information.png" alt="All information for new stairs beam sensor device" style="width:500px;"/>
+<img src="images/Stairs beam adding to entity card.png" alt="Adding new stairs beam sensor to an entities card" style="width:500px;"/>
 <img src="images/Bench-test.jpg" alt="Bench testing the Wemos D1 ESP Home code by bridging ground and D1" style="width:500px;"/>
 
 
