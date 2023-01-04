@@ -35,8 +35,8 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 <br>
 
 ## Indoor IR beam sensor connections
-<img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:300px;"/>
-<img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:300px;"/>
+<img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:500px;"/>
+<img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:500px;"/>
 
 
 
@@ -47,9 +47,9 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 [Gerber files for PCB](https://github.com/sygad/IR-Beam-Sensor/blob/main/Circuit/EasyEDA%20files/Gerber_PCB_IR%20BEam%20Sensor_2_2023-01-04.zip)
 
 
-<img src="Circuit/Schematic_IR BEam Sensor_2023-01-04.png" alt="Schematic for IR beam sensor pcb" style="width:300px;"/>
-<img src="Circuit/PCB_PCB_IR-BEam-Sensor_2_2023-01-04-large.jpg" alt="PCB layout of IR beam sensor project" style="width:300px;"/>
-<img src="Circuit/IR Beam Sensor PCB 3D layout.png" alt="3D view of PCB layout" style="width:300px;"/>
+<img src="Circuit/Schematic_IR BEam Sensor_2023-01-04.png" alt="Schematic for IR beam sensor pcb" style="width:500px;"/>
+<img src="Circuit/PCB_PCB_IR-BEam-Sensor_2_2023-01-04-large.jpg" alt="PCB layout of IR beam sensor project" style="width:500px;"/>
+<img src="Circuit/IR Beam Sensor PCB 3D layout.png" alt="3D view of PCB layout" style="width:500px;"/>
 
 
 <br>
@@ -85,11 +85,11 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
   _Configure MQTT Topic Name_
   - Main Menu > Configuration > Configure Other
   - Under Device Name, enter a name that will be used to pass MQTT messages
-  - <img src="images/Tasmota-topic-name.jpg" alt="Tasmota topic naming" style="width:300px;"/>
+  - <img src="images/Tasmota-topic-name.jpg" alt="Tasmota topic naming" style="width:450px;"/>
 
   _Confirm MQTT is sending messages using the chosen topic name_
   - Main menu > Console
-  - <img src="images/Tasmota-Console.jpg" alt="Tasmota console showing correct topic name is being used" style="width:600px;"/>
+  - <img src="images/Tasmota-Console.jpg" alt="Tasmota console showing correct topic name is being used" style="width:800px;"/>
 
 <br>
 
@@ -112,9 +112,9 @@ binary_sensor:
 
 Adding the Sensor to an Entities Card
 
-<img src="images/Entities-card-with-beam-sensor.png" alt="Enitities card in Home Assistant showing motion sensor" style="width:600px;"/>
+<img src="images/Entities-card-with-beam-sensor.png" alt="Enitities card in Home Assistant showing motion sensor" style="width:500px;"/>
 
-<img src="images/Beam-sensor-entity.jpg" alt="Adding IR beam sensor motion entity to an entities card in Home Assistant" style="width:600px;"/>
+<img src="images/Beam-sensor-entity.jpg" alt="Adding IR beam sensor motion entity to an entities card in Home Assistant" style="width:800px;"/>
 
 
 
