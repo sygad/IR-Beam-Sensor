@@ -61,14 +61,18 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
 
   _Configure MQTT on Tasmota_
   - Main Menu > Configuration > Configure MQTT
-  - Enter the IP address of your MQTT server (HA, IP address if using Mosquitto add-on)
+  - Enter the IP address of your MQTT server (HA, IP address if using the Mosquitto add-on)
   - Enter the MQTT username and password
 
 
   _Configure MQTT Topic Name_
-  - Main Menu > Configuration > Configure Other "Device Name"
-  - Enter a topic name that will be used to pass MQTT messages, I chose "Tasmota Beam Sensor"
-  - <img src="images/Tasmota topic name.png" alt="Tasmota topic naming" style="width:300px;"/>
+  - Main Menu > Configuration > Configure Other
+  - Under Device Name, enter a name that will be used to pass MQTT messages, I chose "Tasmota Beam Sensor"
+  - <img src="images/Tasmota-topic-name.jpg" alt="Tasmota topic naming" style="width:300px;"/>
+
+  _Confirm MQTT_
+  - Main menu > Console
+  - <img src="images/Tasmota-Console.jpg" alt="Tasmota topic naming" style="width:600px;"/>
 
 <br>
 
