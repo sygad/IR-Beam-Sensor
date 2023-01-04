@@ -42,7 +42,9 @@ This is where I am aiming to get to when everything is in place:
 
 ## Custom PCB
 
-[EasyEDA PCB file]() | [Gerber files for PCB]()
+[EasyEDA PCB file](https://github.com/sygad/IR-Beam-Sensor/blob/main/Circuit/EasyEDA%20files/PCB_PCB_IR%20BEam%20Sensor_2_2023-01-03.json) | 
+[EasyEDA Schematic file](https://github.com/sygad/IR-Beam-Sensor/blob/main/Circuit/EasyEDA%20files/SCH_IR%20BEam%20Sensor_2023-01-03.json) | 
+[Gerber files for PCB]()
 
 <img src="Circuit/Schematic_IR BEam Sensor_2023-01-04.png" alt="Schematic for IR beam sensor pcb" style="width:400px;"/>
 <img src="Circuit/PCB_PCB_IR-BEam-Sensor_2_2023-01-04-large.jpg" alt="PCB layout of IR beam sensor project" style="width:400px;"/>
