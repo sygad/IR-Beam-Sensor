@@ -20,22 +20,14 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 
 <br>
 
-## Parts
-- [Indoor beam sensor](https://www.amazon.co.uk/gp/product/B07BTZDNBC/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) | [Outdoor beam sensor](https://www.amazon.co.uk/gp/product/B01M14S944/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) _(either sensor will work)_
-- [Wemos D1 Mini](https://www.amazon.co.uk/AZDelivery-Development-ESP8266EX-Compatible-Micropython/dp/B08BTYHJM1/ref=sr_1_3?crid=36564IOYQDDOV&keywords=wemos%2Bd1%2Bmini&qid=1672824715&sprefix=wemos%2Bd1%2Bmini%2Caps%2C70&sr=8-3&th=1)
-- [R-78E5.0-0.5](https://uk.rs-online.com/web/p/switching-regulators/7577239) switching regulator
-- [DC power jack - DC005](https://www.amazon.co.uk/gp/product/B07F68RZY9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) _(optional)_
-- [XH-2A connectors](https://www.amazon.co.uk/555pcs-Connector-XH-Adapter-Housing/dp/B0B45ST47P/ref=sr_1_2?crid=1R5XFBH0WHR3V&keywords=xh-2a+connectors&qid=1672824756&sprefix=xh-2a+connectors%2Caps%2C67&sr=8-2) _(optional)_
-- [Dupont crimpers](https://www.amazon.co.uk/Ratchet-Yangoutool-Ratcheting-AWG28-20-Terminal/dp/B0895LN7QS/ref=sr_1_10?crid=12LFODXXF07U6&keywords=dupont+crimpers&qid=1672824794&sprefix=dupont+crimpers%2Caps%2C71&sr=8-10) _(optional)_
-
-
-<br>
 
 ## ESPHome Code
 
+Create a new ESPHome project, adding the code below.
+
 ```
 esphome:
-  name: Stairs Beam Sensor
+  name: stairs-beam-sensor 
 
 esp8266:
   board: d1_mini
@@ -74,6 +66,23 @@ binary_sensor:
 ```
 
 
+
+<br>
+
+## Bench test the code
+
+<img src="images/Bench-test.jpg" alt="Bench testing the Wemos D1 ESP Home code by bridging ground and D1" style="width:500px;"/>
+
+
+<br>
+
+## Parts
+- [Indoor beam sensor](https://www.amazon.co.uk/gp/product/B07BTZDNBC/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) | [Outdoor beam sensor](https://www.amazon.co.uk/gp/product/B01M14S944/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) _(either sensor will work)_
+- [Wemos D1 Mini](https://www.amazon.co.uk/AZDelivery-Development-ESP8266EX-Compatible-Micropython/dp/B08BTYHJM1/ref=sr_1_3?crid=36564IOYQDDOV&keywords=wemos%2Bd1%2Bmini&qid=1672824715&sprefix=wemos%2Bd1%2Bmini%2Caps%2C70&sr=8-3&th=1)
+- [R-78E5.0-0.5](https://uk.rs-online.com/web/p/switching-regulators/7577239) switching regulator
+- [DC power jack - DC005](https://www.amazon.co.uk/gp/product/B07F68RZY9/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1) _(optional)_
+- [XH-2A connectors](https://www.amazon.co.uk/555pcs-Connector-XH-Adapter-Housing/dp/B0B45ST47P/ref=sr_1_2?crid=1R5XFBH0WHR3V&keywords=xh-2a+connectors&qid=1672824756&sprefix=xh-2a+connectors%2Caps%2C67&sr=8-2) _(optional)_
+- [Dupont crimpers](https://www.amazon.co.uk/Ratchet-Yangoutool-Ratcheting-AWG28-20-Terminal/dp/B0895LN7QS/ref=sr_1_10?crid=12LFODXXF07U6&keywords=dupont+crimpers&qid=1672824794&sprefix=dupont+crimpers%2Caps%2C71&sr=8-10) _(optional)_
 
 <br>
 
