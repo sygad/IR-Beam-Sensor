@@ -35,8 +35,8 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 <br>
 
 ## Indoor IR beam sensor connections
-<img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:400px;"/>
-<img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:400px;"/>
+<img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:300px;"/>
+<img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:300px;"/>
 
 
 
