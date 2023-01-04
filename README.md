@@ -73,12 +73,12 @@ binary_sensor:
 
 Check that the new ESPHome device has been created and added to the devices list
 
-<img src="images/Stairs Beam New Device.png" alt="New ESPHome device added to devices list" style="width:900px;"/>
+<img src="images/Stairs-Beam-New-Device.jpg" alt="New ESPHome device added to devices list" style="width:900px;"/>
 
 
 Click on the Stairs Beam Sensor device to see a list of entities. You can test the Motion entity by connecting GND to D1, the motion entity will change from "Clear" to "Detected"
 
-<img src="images/Stairs beam device information.png" alt="All information for new stairs beam sensor device" style="width:900px;"/>
+<img src="images/Stairs-beam-device-information.jpg" alt="All information for new stairs beam sensor device" style="width:900px;"/>
 
 
 Connecting D1 to GND to simulate the IR beam sensor detecting motion
@@ -88,7 +88,7 @@ Connecting D1 to GND to simulate the IR beam sensor detecting motion
 
 Finally, you can add the new Stairs Beam Sensor entity to a HA dashboard
 
-<img src="images/Stairs beam adding to entity card.png" alt="Adding new stairs beam sensor to an entities card" style="width:500px;"/>
+<img src="images/Stairs-beam-adding-to-entity-card.jpg" alt="Adding new stairs beam sensor to an entities card" style="width:500px;"/>
 
 
 
