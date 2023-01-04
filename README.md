@@ -68,7 +68,7 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
   - Main Menu > Configuration > Configure Other "Device Name"
   - Enter a name that will be used in the HA config, I chose "Tasmota Beam Sensor"
 
-  <img src="/assets/img/MarineGEO_logo.png" alt="MarineGEO circle logo" style="height: 100px; width:100px;"/>
+  <img src="images/Tasmota topic name.png" alt="Tasmota topic naming" style="width:100px; height: 100px;"/>
 
 <br>
 
