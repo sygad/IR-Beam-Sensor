@@ -15,7 +15,7 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 
 ### End goal
 - Use ESPresence to flash the light of any room in the house it detects that I am present in.
-- IR beam sends a tasker event to launch my doorbell cam app, giving me a 5-10s head start and not relying on the door bell button press event.
+- IR beam trigger event uses tasker to launch my doorbell cam app, giving me a 5-10s head start and not relying on the door bell button press event.
 
 
 <br>
