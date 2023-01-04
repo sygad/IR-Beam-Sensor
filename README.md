@@ -27,7 +27,7 @@ Create a new ESPHome project, adding the code below.
 
 ```
 esphome:
-  name: stairs-beam-sensor
+  name: stairs-beam-sensor 
 
 esp8266:
   board: d1_mini
