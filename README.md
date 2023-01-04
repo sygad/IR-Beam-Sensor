@@ -88,7 +88,7 @@ Connecting D1 to GND to simulate the IR beam sensor detecting motion
 
 Finally, you can add the new Stairs Beam Sensor entity to a HA dashboard
 
-<img src="images/Stairs-beam-adding-to-entity-card.jpg" alt="Adding new stairs beam sensor to an entities card" style="width:500px;"/>
+<img src="images/Stairs-beam-adding-to-entity-card.jpg" alt="Adding new stairs beam sensor to an entities card" style="width:900px;"/>
 
 
 
