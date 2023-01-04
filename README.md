@@ -30,9 +30,9 @@ binary_sensor:
 
 
 ### V2
-I created my first PCB using EasyEDA using this [voltage regulator from Amazon] (https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), I should have paid more attention as it was a: 
+Transferring from prototype board to custom PCB, I used this [voltage regulator from Amazon] (https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), I should have paid more attention as it was a: 
 > 5.5V DC Voltage Regulator Step Down Power Supply Module 4.75V-12V to 5V 800mA
-Which seemed to work fine on the protype board but destroyed (3) ESP8266's when made into a finished PCB circuit.
+EDIT - The finished PCBs kept getting destroyed (3) ESP8266's when made into a finished PCB circuit.
 
 ### V3 (final)
 I experimented with, _(trying anything and everything to get it working)_:
