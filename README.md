@@ -48,9 +48,9 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
 
 <br>
 
-**Questions I had:**
-1. How do I configure Tasmota on the Wemos
-2. How do I congifure HA **exactly** to recognise the Wemos with Tasmota
+**Questions I had after reading the tutorial:**
+1. How do I configure teh MQTT part of Tasmota on the Wemos
+2. How do I congifure HA **exactly** to recognise the Wemos and show the motion output
 
 <br>
 
@@ -79,32 +79,40 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
 **2. Configuring HA**
 
 To get Home Assistant to recognise the incoming MQTT messages, I added the following code inside the **mqtt.yaml** _(Here for reference only, I no longer use this code, see V3 below.)_
+
 ```
 binary_sensor:
+  # Name used for entity
   - name: "Beam sensor motion"
     state_topic: "stat/Tasmota_Beam_Sensor/POWER"
     payload_on: "ON"
     payload_off: "OFF"
     qos: 0
     device_class: motion
-    icon: "mdi:leak"
+    # icon: "mdi:leak"
 ```
 <br>
 
 Adding the Sensor to an Entities Card
 
-**V1 Summary**
+<img src="images/Tasmota-Console.jpg" alt="Tasmota topic naming" style="width:600px;"/>
 
-Whilst this worked, I wanted to migrate my projects to be ESPHome.
 
 <br>
 <hr>
 <br>
 
 ## V2
-Transferring from prototype board to custom PCB, I used this [voltage regulator from Amazon] (https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1), I should have paid more attention as it was a: 
+Transferring from prototype board to a custom PCB, I used this [voltage regulator] (https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
+
+**I should have paid more attention** it was the wrong one: 
 > 5.5V DC Voltage Regulator Step Down Power Supply Module 4.75V-12V to 5V 800mA
-EDIT - The finished PCBs kept getting destroyed (3) ESP8266's when made into a finished PCB circuit.
+
+After destroying (3) ESP8266's, I decided to experiment with ESPHome and revise the entire circuit
+
+<br>
+<hr>
+<br>
 
 ## V3 (final)
 I experimented with: _(aka, trying anything and everything to get it working)_:
