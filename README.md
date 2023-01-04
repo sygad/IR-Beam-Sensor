@@ -14,7 +14,7 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 <br>
 
 ### End goal
-- I would like to utilise ESPresence to flash the light of any room in the house it detects that I am present in.
+- Use ESPresence to flash the light of any room in the house it detects that I am present in.
 - IR beam sends a tasker event to launch my doorbell cam app, giving me a 5-10s head start and not relying on the door bell button press event.
 
 
