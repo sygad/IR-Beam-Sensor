@@ -34,8 +34,20 @@ This is where I am aiming to get to when everything is in place:
 
 <br>
 
-## Wiring
-<img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Tasmota topic naming" style="width:400px;"/>
+## Indoor IR beam sensor connections
+<img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:400px;"/>
+<img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:400px;"/>
+
+
+
+## Custom PCB
+
+[EasyEDA PCB file]() | [Gerber files for PCB]()
+
+<img src="Circuit/Schematic_IR BEam Sensor_2023-01-04.png" alt="Schematic for IR beam sensor pcb" style="width:400px;"/>
+<img src="Circuit/PCB_PCB_IR-BEam-Sensor_2_2023-01-04-large.jpg" alt="PCB layout of IR beam sensor project" style="width:400px;"/>
+<img src="Circuit/IR Beam Sensor PCB 3D layout.png" alt="3D view of PCB layout" style="width:400px;"/>
+
 
 <br>
 <br>
