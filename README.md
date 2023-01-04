@@ -56,7 +56,7 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
 
 **1. Configuring the Wemos with Tasmota**
 - Ensure your MQTT server is setup in HA
-- Obtain the IP address of the new device from your router
+- Obtain the IP address of the newly flashed Tasmota Wemos device from your router
 - Go the IP address of the new Tasmota device and configure MQTT
 
   _Configure MQTT on Tasmota_
@@ -67,8 +67,7 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
   _Configure MQTT Topic Name_
   - Main Menu > Configuration > Configure Other "Device Name"
   - Enter a name that will be used in the HA config, I chose "Tasmota Beam Sensor"
-
-  <img src="images/Tasmota topic name.png" alt="Tasmota topic naming" style="width:100px; height: 100px;"/>
+  - <img src="images/Tasmota topic name.png" alt="Tasmota topic naming" style="width:300px;"/>
 
 <br>
 
