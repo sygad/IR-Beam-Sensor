@@ -235,3 +235,10 @@ I made the following checks and alterations
 - Made sure the relay was set to normally open (NO) _I actually hadn't checked this previously_
 - PCB optimisations for solder pad size, spacing and track width
 - Changed the V1 voltage regulator to a [L7805CV](https://www.amazon.co.uk/gp/product/B007DQ4FXC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). It ran too hot so I eventually settled on a switching regulator [R-78E5.0-0.5](https://uk.rs-online.com/web/p/switching-regulators/7577239)
+
+###Current status
+
+- I have a working prototype using ESPHome
+- New switching regulators have just arrived
+- Awaiting new PCB delivery.
+
