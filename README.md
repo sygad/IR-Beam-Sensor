@@ -23,7 +23,7 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 
 ## ESPHome Code
 
-Create a new ESPHome project, adding the code below.
+Create a new ESPHome project, adding the code below, uploading it to the Wemos D1 when ready.
 
 ```
 esphome:
