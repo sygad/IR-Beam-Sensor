@@ -44,11 +44,12 @@ This is where I am aiming to get to when everything is in place:
 
 [EasyEDA PCB file](https://github.com/sygad/IR-Beam-Sensor/blob/main/Circuit/EasyEDA%20files/PCB_PCB_IR%20BEam%20Sensor_2_2023-01-03.json) | 
 [EasyEDA Schematic file](https://github.com/sygad/IR-Beam-Sensor/blob/main/Circuit/EasyEDA%20files/SCH_IR%20BEam%20Sensor_2023-01-03.json) | 
-[Gerber files for PCB]()
+[Gerber files for PCB](https://github.com/sygad/IR-Beam-Sensor/blob/main/Circuit/EasyEDA%20files/Gerber_PCB_IR%20BEam%20Sensor_2_2023-01-04.zip)
 
-<img src="Circuit/Schematic_IR BEam Sensor_2023-01-04.png" alt="Schematic for IR beam sensor pcb" style="width:400px;"/>
-<img src="Circuit/PCB_PCB_IR-BEam-Sensor_2_2023-01-04-large.jpg" alt="PCB layout of IR beam sensor project" style="width:400px;"/>
-<img src="Circuit/IR Beam Sensor PCB 3D layout.png" alt="3D view of PCB layout" style="width:400px;"/>
+
+<img src="Circuit/Schematic_IR BEam Sensor_2023-01-04.png" alt="Schematic for IR beam sensor pcb" style="width:300px;"/>
+<img src="Circuit/PCB_PCB_IR-BEam-Sensor_2_2023-01-04-large.jpg" alt="PCB layout of IR beam sensor project" style="width:300px;"/>
+<img src="Circuit/IR Beam Sensor PCB 3D layout.png" alt="3D view of PCB layout" style="width:300px;"/>
 
 
 <br>
@@ -88,7 +89,7 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
 
   _Confirm MQTT is sending messages under the chosen topic name_
   - Main menu > Console
-  - <img src="images/Tasmota-Console.jpg" alt="Tasmota topic naming" style="width:600px;"/>
+  - <img src="images/Tasmota-Console.jpg" alt="Tasmota console showing correct topic name is being used" style="width:600px;"/>
 
 <br>
 
@@ -111,9 +112,9 @@ binary_sensor:
 
 Adding the Sensor to an Entities Card
 
-<img src="images/Entities-card-with-beam-sensor.png" alt="Tasmota topic naming" style="width:600px;"/>
+<img src="images/Entities-card-with-beam-sensor.png" alt="Enitities card in Home Assistant showing motion sensor" style="width:600px;"/>
 
-<img src="images/Beam-sensor-entity.jpg" alt="Tasmota topic naming" style="width:600px;"/>
+<img src="images/Beam-sensor-entity.jpg" alt="Adding IR beam sensor motion entity to an entities card in Home Assistant" style="width:600px;"/>
 
 
 
