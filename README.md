@@ -135,9 +135,12 @@ Transferring from prototype board to a custom PCB, I used this [voltage regulato
 **I should have paid more attention** it was the wrong one: 
 > 5.5V DC Voltage Regulator Step Down Power Supply Module 4.75V-12V to 5V 800mA
 
-After destroying (3) ESP8266's, I decided to experiment with ESPHome and revise the entire circuit
+After destroying (3) ESP8266's, I decided to experiment with ESPHome and revise the entire circuit, looking for a better regulator to power the Wemos.
 
+<figure>
 <img src="images/IR-beam-PCB-V2.jpg" alt="Version 1 of custom PCB for IR beam sensor" style="width:800px;"/>
+<figcaption>1st custom PCB showing incorrect regulator header</figcaption>
+</figure>
 
 
 <br>
