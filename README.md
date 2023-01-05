@@ -23,7 +23,7 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 <br>
 
 
-## ESPHome Code
+### ESPHome Code
 
 Create a new ESPHome project, adding the code below, uploading it to the Wemos D1 when ready.
 
@@ -75,7 +75,7 @@ binary_sensor:
 
 
 
-## Bench test the code
+### Bench test the code
 
 Check that the new ESPHome device has been created and added to the devices list
 
@@ -105,7 +105,7 @@ Finally, you can add the new Stairs Beam Sensor entity to a Home Assistant dashb
 
 
 
-## Flash a light
+### Flash a light
 
 Now that the sensor has been coded, tested and is recognised by Home Assistant, it's time to actually make it do something useful.  
 
@@ -132,7 +132,8 @@ Home Assistant automations can provide that functionality.
 
 
 
-
+<br>
+<hr>
 <br>
 
 ### Indoor IR beam sensor connections
@@ -145,6 +146,8 @@ IR beam relay is connected in the Normally Open (NO) position
 
 
 
+<br>
+<hr>
 <br>
 
 
@@ -160,8 +163,10 @@ IR beam relay is connected in the Normally Open (NO) position
 <img src="Circuit/IR Beam Sensor PCB 3D layout.png" alt="3D view of PCB layout" style="width:500px; border:3px solid #cccccc"/>
 
 
+
+
 <br>
-<br>
+<hr>
 <br>
 
 
@@ -177,7 +182,7 @@ IR beam relay is connected in the Normally Open (NO) position
 
 <br>
 
-## V1 - Oct 2021
+### V1 - Oct 2021
 I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-break-sensors-with-tasmota-and-home-assistant/), to [flash the Wemos D1 Mini with Tasmota](https://tasmota.github.io/docs/Getting-Started/#flashing) to send an ON / OFF trigger via MQTT to Home Assistant.  I got this working but hit a few hurdles owing to my still learning Home Assistant.
 
 <br>
@@ -247,7 +252,7 @@ Adding the Sensor to an Entities Card
 <br>
 
 
-## V2 Jan 2022
+### V2 Jan 2022
 Transferring from a prototype board to a custom PCB, I used this [voltage regulator](https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 
 **I should have paid more attention** it was the wrong one: 
@@ -271,7 +276,7 @@ After destroying (3) ESP8266's, I decided to experiment with ESPHome and revise 
 <br>
 
 
-## V3 - Dec 2022 (final)
+### V3 - Dec 2022 (final)
 
 <br>
 
