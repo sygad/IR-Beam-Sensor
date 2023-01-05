@@ -19,6 +19,8 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 
 
 <br>
+<hr>
+<br>
 
 
 ## ESPHome Code
@@ -68,27 +70,46 @@ binary_sensor:
 
 
 <br>
+<hr>
+<br>
+
+
 
 ## Bench test the code
 
 Check that the new ESPHome device has been created and added to the devices list
 
-<img src="images/Stairs-Beam-New-Device.jpg" alt="New ESPHome device added to devices list" style="width:900px;"/>
+<img src="images/Stairs-Beam-New-Device.jpg" alt="New ESPHome device added to devices list" style="width:900px; border:3px solid #cccccc"/>
 
 
 Click on the Stairs Beam Sensor device to see a list of entities. You can test the Motion entity by connecting GND to D1 on the Wemos D1. The motion entity will change from "Clear" to "Detected"
 
-<img src="images/Stairs-beam-device-information.jpg" alt="All information for new stairs beam sensor device" style="width:900px;"/>
+<img src="images/Stairs-beam-device-information.jpg" alt="All information for new stairs beam sensor device" style="width:900px; border:3px solid #cccccc"/>
 
 
 Connecting D1 to GND to simulate the IR beam sensor detecting motion
 
-<img src="images/Bench-test.jpg" alt="Bench testing the Wemos D1 ESP Home code by bridging ground and D1" style="width:500px;"/>
+<img src="images/Bench-test.jpg" alt="Bench testing the Wemos D1 ESP Home code by bridging ground and D1" style="width:500px; border:3px solid #cccccc"/>
 
 
-Finally, you can add the new Stairs Beam Sensor entity to a HA dashboard
+Finally, you can add the new Stairs Beam Sensor entity to a Home Assistant dashboard
 
-<img src="images/Stairs-beam-adding-to-entity-card.jpg" alt="Adding new stairs beam sensor to an entities card" style="width:900px;"/>
+<img src="images/Stairs-beam-adding-to-entity-card.jpg" alt="Adding new stairs beam sensor to an entities card" style="width:900px; border:3px solid #cccccc"/>
+
+
+
+
+<br>
+<hr>
+<br>
+
+
+
+## Flash a light
+
+Now that the sensor has been coded, tested and is recognised by Home Assistant, it's time to actually make it do something useful.  Home Assistant automations can provide that functionality.
+
+<img src="images/Home-Assistant-automation.jpg" alt="Stair beam sensor in Home Assistant automation to flash a ligh" style="width:900px; border:3px solid #cccccc"/>
 
 
 
@@ -104,18 +125,22 @@ Finally, you can add the new Stairs Beam Sensor entity to a HA dashboard
 - [XH-2A connectors](https://www.amazon.co.uk/555pcs-Connector-XH-Adapter-Housing/dp/B0B45ST47P/ref=sr_1_2?crid=1R5XFBH0WHR3V&keywords=xh-2a+connectors&qid=1672824756&sprefix=xh-2a+connectors%2Caps%2C67&sr=8-2) _(optional)_
 - [Dupont crimpers](https://www.amazon.co.uk/Ratchet-Yangoutool-Ratcheting-AWG28-20-Terminal/dp/B0895LN7QS/ref=sr_1_10?crid=12LFODXXF07U6&keywords=dupont+crimpers&qid=1672824794&sprefix=dupont+crimpers%2Caps%2C71&sr=8-10) _(optional)_
 
+
+
+
 <br>
 
 ## Indoor IR beam sensor connections
 
-<img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:500px;"/>
+<img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:500px; border:3px solid #cccccc"/>
 
 IR beam relay is connected in the Normally Open (NO) position
 
-<img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:500px;"/>
+<img src="images/Indoor-beam-sensor-NONC-large.jpg" alt="Indoor IR beam sensor wiring with normally open (NO) setting connected" style="width:500px; border:3px solid #cccccc"/>
 
 
 
+<br>
 
 
 ## Custom PCB
@@ -125,32 +150,41 @@ IR beam relay is connected in the Normally Open (NO) position
 [Gerber files for PCB](https://github.com/sygad/IR-Beam-Sensor/blob/main/Circuit/EasyEDA%20files/Gerber_PCB_IR%20BEam%20Sensor_2_2023-01-04.zip)
 
 
-<img src="Circuit/Schematic_IR BEam Sensor_2023-01-04.png" alt="Schematic for IR beam sensor pcb" style="width:500px;"/>
-<img src="Circuit/PCB_PCB_IR-BEam-Sensor_2_2023-01-04-large.jpg" alt="PCB layout of IR beam sensor project" style="width:500px;"/>
-<img src="Circuit/IR Beam Sensor PCB 3D layout.png" alt="3D view of PCB layout" style="width:500px;"/>
+<img src="Circuit/Schematic_IR BEam Sensor_2023-01-04.png" alt="Schematic for IR beam sensor pcb" style="width:500px; border:3px solid #cccccc"/>
+<img src="Circuit/PCB_PCB_IR-BEam-Sensor_2_2023-01-04-large.jpg" alt="PCB layout of IR beam sensor project" style="width:500px; border:3px solid #cccccc"/>
+<img src="Circuit/IR Beam Sensor PCB 3D layout.png" alt="3D view of PCB layout" style="width:500px; border:3px solid #cccccc"/>
 
 
 <br>
 <br>
 <br>
+
+
+
+
+
+
+
+
+
 
 # Project History
 
 <br>
 
-## V1
-I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-break-sensors-with-tasmota-and-home-assistant/), to [flash the Wemos D1 Mini with Tasmota](https://tasmota.github.io/docs/Getting-Started/#flashing) to send an ON / OFF trigger via MQTT to Home Assistant (HA).  I got this working but hit a few hurdles owing to my still learning HA.
+## V1 - Oct 2021
+I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-break-sensors-with-tasmota-and-home-assistant/), to [flash the Wemos D1 Mini with Tasmota](https://tasmota.github.io/docs/Getting-Started/#flashing) to send an ON / OFF trigger via MQTT to Home Assistant.  I got this working but hit a few hurdles owing to my still learning Home Assistant.
 
 <br>
 
 **Questions I had after reading the tutorial:**
 1. How do I configure the MQTT part of Tasmota on the Wemos?
-2. How do I congifure HA **exactly** to recognise the Wemos and show the motion output?
+2. How do I congifure Home Assistant **exactly** to recognise the Wemos and show the motion output?
 
 <br>
 
 **1. Configuring the Wemos with Tasmota**
-- Ensure your MQTT server is setup in HA
+- Ensure your MQTT server is setup in Home Assistant
 - Obtain the IP address of the newly flashed Tasmota Wemos device from your router
 - Go to the IP address of the new Tasmota device to configure MQTT
 
@@ -164,16 +198,16 @@ I followed [this excellent tutorial](https://www.inspectmygadgets.com/ir-beam-br
   - Main Menu > Configuration > Configure Other
   - Under Device Name, enter a name that will be used to pass MQTT messages
 
-    <img src="images/Tasmota-topic-name.jpg" alt="Tasmota topic naming" style="width:450px;"/>
+    <img src="images/Tasmota-topic-name.jpg" alt="Tasmota topic naming" style="width:450px; border:3px solid #cccccc"/>
 
   _Confirm MQTT is sending messages using the chosen topic name_
   - Main menu > Console
 
-    <img src="images/Tasmota-Console.jpg" alt="Tasmota console showing correct topic name is being used" style="width:800px;"/>
+    <img src="images/Tasmota-Console.jpg" alt="Tasmota console showing correct topic name is being used" style="width:800px; border:3px solid #cccccc"/>
 
 <br>
 
-**2. Configuring HA**
+**2. Configuring Home Assistant**
 
 To get Home Assistant to recognise the incoming MQTT messages, I added the following code inside the **mqtt.yaml** _(Here for reference only, I no longer use this code, see V3 below.)_
 
@@ -192,8 +226,14 @@ binary_sensor:
 
 Adding the Sensor to an Entities Card
 
-<img src="images/Entities-card-with-beam-sensor.png" alt="Enitities card in Home Assistant showing motion sensor" style="width:500px;"/>
-<img src="images/Beam-sensor-entity.jpg" alt="Adding IR beam sensor motion entity to an entities card in Home Assistant" style="width:800px;"/>
+<img src="images/Entities-card-with-beam-sensor.png" alt="Enitities card in Home Assistant showing motion sensor" style="width:500px; border:3px solid #cccccc"/>
+<img src="images/Beam-sensor-entity.jpg" alt="Adding IR beam sensor motion entity to an entities card in Home Assistant" style="width:800px; border:3px solid #cccccc"/>
+
+
+
+
+
+
 
 
 
@@ -202,8 +242,8 @@ Adding the Sensor to an Entities Card
 <br>
 
 
-## V2
-Transferring from prototype board to a custom PCB, I used this [voltage regulator](https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
+## V2 Jan 2022
+Transferring from a prototype board to a custom PCB, I used this [voltage regulator](https://www.amazon.co.uk/gp/product/B07PPKR4HW/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1).
 
 **I should have paid more attention** it was the wrong one: 
 > 5.5V DC Voltage Regulator Step Down Power Supply Module 4.75V-12V to 5V 800mA
@@ -211,9 +251,14 @@ Transferring from prototype board to a custom PCB, I used this [voltage regulato
 After destroying (3) ESP8266's, I decided to experiment with ESPHome and revise the entire circuit, looking for a better regulator to power the Wemos.
 
 <figure>
-<img src="images/IR-beam-PCB-V2.jpg" alt="Version 1 of custom PCB for IR beam sensor" style="width:800px;"/>
+<img src="images/IR-beam-PCB-V2.jpg" alt="Version 1 of custom PCB for IR beam sensor" style="width:800px; border:3px solid #cccccc"/>
 <figcaption>1st custom PCB showing incorrect regulator header</figcaption>
 </figure>
+
+
+
+
+
 
 
 <br>
@@ -221,7 +266,14 @@ After destroying (3) ESP8266's, I decided to experiment with ESPHome and revise 
 <br>
 
 
-## V3 (final)
+## V3 - Dec 2022 (final)
+
+<br>
+
+**All working code and PCB designs are at the top of the page.**
+
+<br>
+
 I experimented with: _(aka, trying anything and everything to get it working)_:
 - Powering the esp and the beam sensor seperately, which worked well.
 - Pulling the resistor high in ESPHome
