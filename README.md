@@ -107,17 +107,22 @@ Finally, you can add the new Stairs Beam Sensor entity to a Home Assistant dashb
 
 ## Flash a light
 
-Now that the sensor has been coded, tested and is recognised by Home Assistant, it's time to actually make it do something useful.  Home Assistant automations can provide that functionality.
+Now that the sensor has been coded, tested and is recognised by Home Assistant, it's time to actually make it do something useful.  
+
+Home Assistant automations can provide that functionality.
 
 <img src="images/Home-Assistant-automation.jpg" alt="Stair beam sensor in Home Assistant automation to flash a ligh" style="width:900px; border:3px solid #cccccc"/>
 
 
 
 <br>
+<hr>
+<br>
+
 
 # Building a custom PCB
 
-## Parts
+### Parts
 - [Indoor beam sensor](https://www.amazon.co.uk/gp/product/B07BTZDNBC/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) | [Outdoor beam sensor](https://www.amazon.co.uk/gp/product/B01M14S944/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) _(either sensor will work)_
 - [Wemos D1 Mini](https://www.amazon.co.uk/AZDelivery-Development-ESP8266EX-Compatible-Micropython/dp/B08BTYHJM1/ref=sr_1_3?crid=36564IOYQDDOV&keywords=wemos%2Bd1%2Bmini&qid=1672824715&sprefix=wemos%2Bd1%2Bmini%2Caps%2C70&sr=8-3&th=1)
 - [R-78E5.0-0.5](https://uk.rs-online.com/web/p/switching-regulators/7577239) switching regulator
@@ -130,7 +135,7 @@ Now that the sensor has been coded, tested and is recognised by Home Assistant, 
 
 <br>
 
-## Indoor IR beam sensor connections
+### Indoor IR beam sensor connections
 
 <img src="images/Indoor-beam-sensor-connections-large.jpg" alt="Indoor IR beam sensor wiring for volage supply and relay contacts to Wemos D1" style="width:500px; border:3px solid #cccccc"/>
 
@@ -143,7 +148,7 @@ IR beam relay is connected in the Normally Open (NO) position
 <br>
 
 
-## Custom PCB
+### Custom PCB
 
 [EasyEDA PCB file](https://github.com/sygad/IR-Beam-Sensor/blob/main/Circuit/EasyEDA%20files/PCB_PCB_IR%20BEam%20Sensor_2_2023-01-03.json) | 
 [EasyEDA Schematic file](https://github.com/sygad/IR-Beam-Sensor/blob/main/Circuit/EasyEDA%20files/SCH_IR%20BEam%20Sensor_2023-01-03.json) | 
