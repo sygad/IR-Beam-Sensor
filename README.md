@@ -23,7 +23,7 @@ Delivery driver walks down the driveway, I need **fast** and reliable indication
 
 ## ESPHome Code
 
-Create a new ESPHome project, adding the code below.
+Create a new ESPHome project, adding the code below, uploading it to the Wemos D1 when ready.
 
 ```
 esphome:
@@ -71,10 +71,30 @@ binary_sensor:
 
 ## Bench test the code
 
+Check that the new ESPHome device has been created and added to the devices list
+
+<img src="images/Stairs-Beam-New-Device.jpg" alt="New ESPHome device added to devices list" style="width:900px;"/>
+
+
+Click on the Stairs Beam Sensor device to see a list of entities. You can test the Motion entity by connecting GND to D1 on the Wemos D1. The motion entity will change from "Clear" to "Detected"
+
+<img src="images/Stairs-beam-device-information.jpg" alt="All information for new stairs beam sensor device" style="width:900px;"/>
+
+
+Connecting D1 to GND to simulate the IR beam sensor detecting motion
+
 <img src="images/Bench-test.jpg" alt="Bench testing the Wemos D1 ESP Home code by bridging ground and D1" style="width:500px;"/>
 
 
+Finally, you can add the new Stairs Beam Sensor entity to a HA dashboard
+
+<img src="images/Stairs-beam-adding-to-entity-card.jpg" alt="Adding new stairs beam sensor to an entities card" style="width:900px;"/>
+
+
+
 <br>
+
+# Building a custom PCB
 
 ## Parts
 - [Indoor beam sensor](https://www.amazon.co.uk/gp/product/B07BTZDNBC/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) | [Outdoor beam sensor](https://www.amazon.co.uk/gp/product/B01M14S944/ref=ppx_yo_dt_b_search_asin_image?ie=UTF8&psc=1) _(either sensor will work)_
@@ -214,5 +234,4 @@ I made the following checks and alterations
 - Beam sensor relay was a DRY relay (no connection on either relay terminal to the supply +ve / -ve)
 - Made sure the relay was set to normally open (NO) _I actually hadn't checked this previously_
 - PCB optimisations for solder pad size, spacing and track width
-- Changed the V1 voltage regulator to a [L7805CV](https://www.amazon.co.uk/gp/product/B007DQ4FXC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). It ran too hot so I eventually settled on a Switching regulator [R-78E5.0-0.5](https://uk.rs-online.com/web/p/switching-regulators/7577239)
-
+- Changed the V1 voltage regulator to a [L7805CV](https://www.amazon.co.uk/gp/product/B007DQ4FXC/ref=ppx_yo_dt_b_search_asin_title?ie=UTF8&psc=1). It ran too hot so I eventually settled on a switching regulator [R-78E5.0-0.5](https://uk.rs-online.com/web/p/switching-regulators/7577239)
